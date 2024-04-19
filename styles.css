@@ -1,0 +1,21 @@
+body{
+    background: rgb(241, 241, 241)
+}
+
+#navbar{
+    background: white;
+    margin;
+}
+
+#willkommenbanner{
+    background: rgb(255, 94, 35);
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+
+    font-family:Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+/*<link rel="stylesheet" href="styles.css">*/
