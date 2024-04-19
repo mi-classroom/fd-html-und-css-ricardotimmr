@@ -1,0 +1,37 @@
+html, body{
+  background-color: var(--color-grey);
+  font-family: source-sans-3, Arial, sans-serif;
+  font-weight: var(--fw-regular);
+  font-size: var(--m);
+}
+
+header{
+  background-color: var(--color-white);
+  padding: var(--s);
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: var(--fw-bold);
+}
+
+main > *{
+  padding: var(--m);
+}
+
+
+h1{
+  font-size: var(--xl);
+}
+
+h2{
+  font-size: var(--l);
+  margin-left: var(--s);
+  margin-right: var(--s);
+  margin-top: var(--xl);
+  margin-bottom: var(--xl);
+}
+
+h3{
+  font-size: var(--m);
+}

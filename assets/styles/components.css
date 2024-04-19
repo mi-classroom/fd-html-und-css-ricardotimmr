@@ -1,0 +1,72 @@
+/* Main List
+---------------------------------------------------------------------------- */
+
+.welcome-box{
+  background-color: var(--color-orange);
+  margin: var(--s);
+  h2{
+    color: var(--color-white);
+    margin-left: var(--xl);
+    margin-right: var(--xl);
+  }
+
+  p{
+    color: var(--color-white);
+    margin-left: var(--xl);
+    margin-right: var(--xl);
+    margin-bottom: var(--xl);
+  }
+}
+
+
+/* Fav List
+---------------------------------------------------------------------------- */
+
+.fav-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Fav Item
+---------------------------------------------------------------------------- */
+
+.fav-item {
+  background-color: var(--color-white);
+  padding: var(--s) var(--m) var(--s) var(--s);
+  position: relative;
+  margin: var(--s);
+
+  &::before{
+    position: absolute;
+    font-size: var(--xxl);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: var(--l);
+    top: 0;
+    bottom: 0;
+  }
+
+  .icon{
+    position: absolute;
+    top: 1;
+    left: 1;
+    
+  }
+
+  p, address{
+    margin: 0;
+    font-style: normal;
+    margin-left: var(--xxxl);
+    line-height: var(--lh-tight);
+  }
+
+  p{
+    font-weight: var(--fw-medium);
+  }
+
+  address{
+    font-size: smaller;
+  }
+}
