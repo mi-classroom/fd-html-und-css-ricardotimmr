@@ -17,6 +17,21 @@
     margin-right: var(--s);
     margin-bottom: var(--s);
   }
+
+  .about-link {
+    text-align: left;
+    margin-left: var(--s);
+    margin-top: var(--s);
+    
+  }
+
+  .about-link a {
+    color: var(--color-white);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: var(--fw-bold);
+    display: inline-block;
+  }
 }
 
 
@@ -126,7 +141,7 @@
 
 .card-grid li {
   background-color: var(--color-white);
-  margin-bottom: var(--s);
+  margin-bottom: var(--xl);
   margin-left: var(--s);
   margin-right: var(--s);
 
@@ -167,3 +182,31 @@
 
 /* Footer
 ---------------------------------------------------------------------------- */
+
+
+footer {
+  background-color: rgb(89, 89, 89);
+  padding: var(--s);
+  overflow: hidden;
+
+  section {
+    margin-bottom: var(--s);
+    color: var(--color-white);
+    display: inline-block;
+    width: 100%;
+
+    ul {
+      margin-left: var(--s);
+      margin-top: -15px;
+
+      li {
+        margin-bottom: 5px;
+        font-weight: var(--fw-light);
+      }
+    }
+
+    h2 {
+      font-size: var(--l);
+    }
+  }
+}
