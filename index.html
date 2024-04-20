@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./assets/styles/variables.css">
     <link rel="stylesheet" href="./assets/styles/base.css">
     <link rel="stylesheet" href="./assets/styles/components.css">
+    <link rel="stylesheet" href="./assets/styles/utils.css">
 
 </head>
 
@@ -48,18 +49,22 @@
                     <address>Monika Engelen</address>
                 </li>
                 <li class="fav-item">
+                    <span class="icon">description</span>
                     <p>Wie erstelle ich eine Agenda?</p>
                     <address>Raphaela Groten</address>
                 </li>
                 <li class="fav-item">
-                    <p>Wie priorisiere ich (ein Backlock)?</p>
+                    <span class="icon">smart_display</span>
+                    <p>Wie priorisiere ich (ein Backlog)?</p>
                     <address>Raphaela Groten</address>
                 </li>
-                <li class="fav-item">
+                <li class="is-hidden">
+                    <span class="icon">  </span>
                     <p>Wie halte ich einen Pitch?</p>
                     <address>Monika Engelen</address>
                 </li>
-                <li class="fav-item">
+                <li class="is-hidden">
+                    <span class="icon">  </span>
                     <p>Wie baue ich eine Präsentation auf?</p>
                     <address>Monika Engelen</address>
                 </li>
@@ -68,26 +73,33 @@
 
         <section>
             <h2>Von deinem ILU Schreibtisch</h2>
-            <ul class="fav-list">
-                <li class="fav-item">
+            <ul class="ilu-list">
+                <li class="ilu-item">
+                    <span class="icon">folder</span>
                     <p>Datenbanken 1</p>
                 </li>
-                <li class="fav-item">
+                <li class="ilu-item">
+                    <span class="icon">folder</span>
                     <p>Kommunikationstechnik und Netze</p>
                 </li>
-                <li class="fav-item">
+                <li class="ilu-item">
+                    <span class="icon">folder</span>
                     <p>Paradigmen der Programmierung</p>
                 </li>
-                <li class="fav-item">
+                <li class="ilu-item">
+                    <span class="icon">folder</span>
                     <p>Audiovisuelles Medienprojekt</p>
                 </li>
-                <li class="fav-item">
+                <li class="ilu-item">
+                    <span class="icon">folder</span>
                     <p>Grundlagen des Web</p>
                 </li>
-                <li class="fav-item">
+                <li class="ilu-item">
+                    <span class="icon">folder</span>
                     <p>Screendesign</p>
                 </li>
-                <li class="fav-item">
+                <li class="ilu-item">
+                    <span class="icon">folder</span>
                     <p>Datenbanken 1</p>
                 </li>
             </ul>
@@ -96,7 +108,7 @@
 
         <section>
             <h2>Verlauf</h2>
-            <ul>
+            <ul class="card-grid">
                 <li>
                     <article>
                         <header>

@@ -3,23 +3,24 @@
 
 .welcome-box{
   background-color: var(--color-orange);
-  margin: var(--s);
+  margin-top: var(--xs);
+  margin-bottom: var(--xs);
   h2{
     color: var(--color-white);
-    margin-left: var(--xl);
-    margin-right: var(--xl);
+    margin-left: var(--s);
+    margin-right: var(--s);
   }
 
   p{
     color: var(--color-white);
-    margin-left: var(--xl);
-    margin-right: var(--xl);
-    margin-bottom: var(--xl);
+    margin-left: var(--s);
+    margin-right: var(--s);
+    margin-bottom: var(--s);
   }
 }
 
 
-/* Fav List
+/* Fav List & ILU List
 ---------------------------------------------------------------------------- */
 
 .fav-list {
@@ -28,12 +29,18 @@
   list-style: none;
 }
 
-/* Fav Item
+.ilu-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Fav Item & ILU Item
 ---------------------------------------------------------------------------- */
 
 .fav-item {
   background-color: var(--color-white);
-  padding: var(--s) var(--m) var(--s) var(--s);
+  padding: var(--m) var(--m) var(--m) var(--m);
   position: relative;
   margin: var(--s);
 
@@ -50,9 +57,9 @@
 
   .icon{
     position: absolute;
-    top: 1;
-    left: 1;
-    
+    top: 10px;
+    left: 5px;
+    font-size: var(--xxxl);
   }
 
   p, address{
@@ -63,10 +70,78 @@
   }
 
   p{
-    font-weight: var(--fw-medium);
+    font-weight: var(--fw-regular);
+  }
+
+  address{
+    font-size: smaller;
+    font-weight: var(--fw-light);
+  }
+}
+
+.ilu-item {
+  background-color: var(--color-white);
+  padding: var(--m) var(--m) var(--m) var(--m);
+  position: relative;
+  margin: var(--s);
+
+  &::before{
+    position: absolute;
+    font-size: var(--xxl);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: var(--l);
+    top: 0;
+    bottom: 0;
+  }
+
+  .icon{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    font-size: var(--xxxl);
+  }
+
+  p, address{
+    margin: 0;
+    font-style: normal;
+    margin-left: var(--xxxl);
+    line-height: var(--lh-tight);
+  }
+
+  p{
+    font-weight: var(--fw-regular);
   }
 
   address{
     font-size: smaller;
   }
+}
+
+
+
+.card-grid{
+  
+  li{
+    background-color: var(--color-white);
+    margin-bottom: var(--s);
+
+    img{
+      width: 100%;
+      aspect-ratio: 16/9;
+      object-fit: cover;
+    }
+
+    figcaption{
+      padding: var(--s);
+    }
+
+    h3{
+      padding: 0;
+      margin: 0;
+      font-weight: var(--fw-bold);
+    }
+  }
+  
 }
