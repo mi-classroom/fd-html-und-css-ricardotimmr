@@ -1,34 +1,40 @@
-html, body{
+html,
+body {
   background-color: var(--color-grey);
   font-family: source-sans-3, Arial, sans-serif;
   font-weight: var(--fw-regular);
   font-size: var(--m);
 }
 
-header{
+header {
   background-color: var(--color-white);
   padding: var(--l);
 }
 
-footer{
+footer {
   background-color: var(--color-white);
 }
 
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: var(--fw-bold);
 }
 
-main > *{
+main>* {
   padding: var(--m);
 }
 
 
-h1{
+h1 {
   font-size: var(--xl);
 }
 
-h2{
+h2 {
   font-size: var(--xl);
   margin-left: var(--s);
   margin-right: var(--s);
@@ -36,6 +42,6 @@ h2{
   margin-bottom: var(--xl);
 }
 
-h3{
+h3 {
   font-size: var(--m);
 }

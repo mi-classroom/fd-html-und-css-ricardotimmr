@@ -1,20 +1,20 @@
 /* Header
 ---------------------------------------------------------------------------- */
 
-header{
+header {
 
-  nav{
+  nav {
 
-    .logo-link{
+    .logo-link {
       margin-left: 70px;
     }
 
-    .icon{
-    position: absolute;
-    top: 40px;
-    left: 25px;
-    font-size: var(--xxxl);
-    cursor: pointer;
+    .icon {
+      position: absolute;
+      top: 40px;
+      left: 25px;
+      font-size: var(--xxxl);
+      cursor: pointer;
     }
 
     ul {
@@ -38,7 +38,7 @@ header{
       cursor: pointer;
       transition: background-color 0.3s ease;
     }
-    
+
     li:hover {
       background-color: var(--color-grey);
     }
@@ -50,17 +50,18 @@ header{
 /* Main List
 ---------------------------------------------------------------------------- */
 
-.welcome-box{
+.welcome-box {
   background-color: var(--color-orange);
   margin-top: var(--xs);
   margin-bottom: var(--xs);
-  h2{
+
+  h2 {
     color: var(--color-white);
     margin-left: var(--s);
     margin-right: var(--s);
   }
 
-  p{
+  p {
     color: var(--color-white);
     margin-left: var(--s);
     margin-right: var(--s);
@@ -108,7 +109,7 @@ header{
   position: relative;
   margin: var(--s);
 
-  &::before{
+  &::before {
     position: absolute;
     font-size: var(--xxl);
     display: flex;
@@ -119,25 +120,26 @@ header{
     bottom: 0;
   }
 
-  .icon{
+  .icon {
     position: absolute;
     top: 10px;
     left: 5px;
     font-size: var(--xxxl);
   }
 
-  p, address{
+  p,
+  address {
     margin: 0;
     font-style: normal;
     margin-left: var(--xxxl);
     line-height: var(--lh-tight);
   }
 
-  p{
+  p {
     font-weight: var(--fw-regular);
   }
 
-  address{
+  address {
     font-size: smaller;
     font-weight: var(--fw-light);
   }
@@ -149,7 +151,7 @@ header{
   position: relative;
   margin: var(--s);
 
-  &::before{
+  &::before {
     position: absolute;
     font-size: var(--xxl);
     display: flex;
@@ -160,25 +162,26 @@ header{
     bottom: 0;
   }
 
-  .icon{
+  .icon {
     position: absolute;
     top: 5px;
     left: 5px;
     font-size: var(--xxxl);
   }
 
-  p, address{
+  p,
+  address {
     margin: 0;
     font-style: normal;
     margin-left: var(--xxxl);
     line-height: var(--lh-tight);
   }
 
-  p{
+  p {
     font-weight: var(--fw-regular);
   }
 
-  address{
+  address {
     font-size: smaller;
   }
 }
