@@ -103,9 +103,9 @@ header {
 /* Fav Item & ILU Item
 ---------------------------------------------------------------------------- */
 
-.fav-item {
+.item {
   background-color: var(--color-white);
-  padding: var(--m) var(--m) var(--m) var(--m);
+  padding: var(--m);
   position: relative;
   margin: var(--s);
 
@@ -120,49 +120,14 @@ header {
     bottom: 0;
   }
 
-  .icon {
+  .fav-icon {
     position: absolute;
     top: 10px;
     left: 5px;
     font-size: var(--xxxl);
   }
 
-  p,
-  address {
-    margin: 0;
-    font-style: normal;
-    margin-left: var(--xxxl);
-    line-height: var(--lh-tight);
-  }
-
-  p {
-    font-weight: var(--fw-regular);
-  }
-
-  address {
-    font-size: smaller;
-    font-weight: var(--fw-light);
-  }
-}
-
-.ilu-item {
-  background-color: var(--color-white);
-  padding: var(--m) var(--m) var(--m) var(--m);
-  position: relative;
-  margin: var(--s);
-
-  &::before {
-    position: absolute;
-    font-size: var(--xxl);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    line-height: var(--l);
-    top: 0;
-    bottom: 0;
-  }
-
-  .icon {
+  .ilu-icon {
     position: absolute;
     top: 5px;
     left: 5px;
@@ -183,6 +148,7 @@ header {
 
   address {
     font-size: smaller;
+    font-weight: var(--fw-light);
   }
 }
 
