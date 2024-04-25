@@ -33,8 +33,6 @@ header {
       font-size: var(--l);
       font-weight: var(--fw-regular);
       background-color: var(--color-white);
-      margin-left: -20px;
-      margin-right: -20px;
       cursor: pointer;
       transition: background-color 0.3s ease;
     }
