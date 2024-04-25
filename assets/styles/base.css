@@ -1,17 +1,19 @@
 html,
 body {
   background-color: var(--color-grey);
-  font-family: source-sans-3, Arial, sans-serif;
-  font-weight: var(--fw-regular);
+  font-family: "source-sans-3", Arial, sans-serif;
   font-size: var(--m);
+  font-weight: var(--fw-regular);
 }
 
 header {
-  background-color: var(--color-white);
   padding: var(--l);
+  background-color: var(--color-white);
 }
 
 footer {
+  max-width: 75rem;
+  margin: 0 auto;
   background-color: var(--color-white);
 }
 
@@ -25,6 +27,11 @@ h6 {
   font-weight: var(--fw-bold);
 }
 
+main{
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
 main>* {
   padding: var(--m);
 }
@@ -35,11 +42,8 @@ h1 {
 }
 
 h2 {
+  margin: var(--xl) var(--s) var(--xl) var(--s);
   font-size: var(--xl);
-  margin-left: var(--s);
-  margin-right: var(--s);
-  margin-top: var(--xl);
-  margin-bottom: var(--xl);
 }
 
 h3 {

@@ -2,9 +2,7 @@
 ---------------------------------------------------------------------------- */
 
 header {
-
   nav {
-
     .logo-link {
       margin-left: 70px;
     }
@@ -13,32 +11,33 @@ header {
       position: absolute;
       top: 40px;
       left: 25px;
-      font-size: var(--xxxl);
       cursor: pointer;
+      font-size: var(--xxxl);
     }
 
     ul {
-      list-style: none;
       display: flex;
       justify-content: space-between;
       padding: 0;
       margin-top: var(--s);
       margin-bottom: -20px;
+      list-style: none;
     }
 
     li {
-      padding: var(--s) var(--s);
       flex: 1;
-      text-align: center;
-      font-size: var(--l);
-      font-weight: var(--fw-regular);
+      padding: var(--s) var(--s);
       background-color: var(--color-white);
       cursor: pointer;
+      font-size: var(--l);
+      font-weight: var(--fw-regular);
+      text-align: center;
       transition: background-color 0.3s ease;
     }
 
     li:hover {
       background-color: var(--color-grey);
+      font-weight: var(--fw-bold);
     }
   }
 
@@ -49,36 +48,35 @@ header {
 ---------------------------------------------------------------------------- */
 
 .welcome-box {
+  margin: var(--xs) 24px var(--xs) 24px;
   background-color: var(--color-orange);
-  margin-top: var(--xs);
-  margin-bottom: var(--xs);
 
   h2 {
-    color: var(--color-white);
-    margin-left: var(--s);
     margin-right: var(--s);
+    margin-left: var(--s);
+    color: var(--color-white);
   }
 
   p {
-    color: var(--color-white);
-    margin-left: var(--s);
     margin-right: var(--s);
     margin-bottom: var(--s);
+    margin-left: var(--s);
+    color: var(--color-white);
   }
 
   .about-link {
-    text-align: left;
-    margin-left: var(--s);
     margin-top: var(--s);
+    margin-left: var(--s);
     cursor: pointer;
+    text-align: left;
   }
 
   .about-link a {
+    display: inline-block;
     color: var(--color-white);
-    text-decoration: none;
     font-size: 16px;
     font-weight: var(--fw-bold);
-    display: inline-block;
+    text-decoration: none;
   }
 }
 
@@ -87,35 +85,43 @@ header {
 ---------------------------------------------------------------------------- */
 
 .fav-list {
-  margin: 0;
+  display: grid;
   padding: 0;
+  margin: 0;
+  margin-right: var(--xxs);
+  margin-left: var(--xxs);
+  gap: var(--m);
+  grid-auto-rows: 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(350px,1fr));
   list-style: none;
 }
 
 .ilu-list {
-  margin: 0;
+  display: inline-flex;
+  flex-flow: row wrap;
   padding: 0;
+  margin: 0;
   list-style: none;
 }
+
 
 /* Fav Item & ILU Item
 ---------------------------------------------------------------------------- */
 
 .item {
-  background-color: var(--color-white);
-  padding: var(--m);
   position: relative;
-  margin: var(--s);
+  padding: var(--m);
+  background-color: var(--color-white);
 
   &::before {
     position: absolute;
-    font-size: var(--xxl);
+    top: 0;
+    bottom: 0;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: var(--xxl);
     line-height: var(--l);
-    top: 0;
-    bottom: 0;
   }
 
   .fav-icon {
@@ -135,8 +141,8 @@ header {
   p,
   address {
     margin: 0;
-    font-style: normal;
     margin-left: var(--xxxl);
+    font-style: normal;
     line-height: var(--lh-tight);
   }
 
@@ -145,9 +151,14 @@ header {
   }
 
   address {
+    margin-top: var(--xxxs);
     font-size: smaller;
     font-weight: var(--fw-light);
   }
+}
+
+.ilu-list .item {
+  margin: var(--xxs);
 }
 
 
@@ -155,11 +166,18 @@ header {
 ---------------------------------------------------------------------------- */
 
 
+.card-grid{
+  display: grid;
+  gap: var(--m);
+  grid-auto-rows: 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(400px,1fr));
+}
+
 .card-grid li {
-  background-color: var(--color-white);
+  margin-right: var(--s);
   margin-bottom: var(--xl);
   margin-left: var(--s);
-  margin-right: var(--s);
+  background-color: var(--color-white);
 
   img {
     width: 100%;
@@ -170,18 +188,18 @@ header {
 
 
 .card-item ul {
-  list-style-type: none;
   padding: 0;
   margin-top: -5px;
+  list-style-type: none;
 }
 
 .card-item li {
   display: inline-block;
   padding: var(--xxxs);
-  background-color: var(--color-grey);
+  margin-right: -15px;
   margin-bottom: var(--s);
   margin-left: var(--l);
-  margin-right: -15px;
+  background-color: var(--color-grey);
   text-align: center;
 }
 
@@ -201,28 +219,32 @@ header {
 
 
 footer {
-  background-color: rgb(89, 89, 89);
-  padding: var(--s);
   overflow: hidden;
+  padding: var(--s);
+  background-color: grey;
 
-  section {
+  h2 {
+    font-size: var(--l);
+  }
+
+  ul {
+    width: 100%;
     margin-bottom: var(--s);
     color: var(--color-white);
-    display: inline-block;
-    width: 100%;
+
+    li{
+      margin-right: var(--xxl);
+      grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
 
     ul {
-      margin-left: var(--s);
       margin-top: -15px;
+      margin-left: var(--s);
 
       li {
         margin-bottom: 5px;
         font-weight: var(--fw-light);
       }
     }
-
-    h2 {
-      font-size: var(--l);
-    }
+  }
   }
 }
