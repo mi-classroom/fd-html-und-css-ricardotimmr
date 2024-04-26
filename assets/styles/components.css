@@ -15,12 +15,12 @@ header {
 
     .upper-search-bar {
       display: flex;
-      align-items: center;
       width: 30rem;
+      align-items: center;
+      justify-content: space-between;
       padding: 0;
       margin: var(--m) 80px;
       background-color: var(--color-grey);
-      justify-content: space-between;
 
       p {
         margin: 0 var(--m);
@@ -29,15 +29,15 @@ header {
       }
 
       .icon.upper {
-        color: var(--color-white);
+        padding: 10px;
         background-color: var(--color-orange);
+        color: var(--color-white);
         font-size: var(--xxl);
         font-weight: var(--fw-light);
-        padding: 10px;
       }
     }
 
-    @media screen and (max-width: 1200px) {
+    @media screen and (width <= 1200px) {
       .upper-search-bar {
         display: none;
       }
@@ -102,20 +102,20 @@ header {
       }
     }
 
-    @media screen and (max-width: 1200px) {
+    @media screen and (width <= 1200px) {
       .nav-list {
         display: none;
       }
     }
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (width >= 1200px) {
     .icon.lower {
       display: none;
     }
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (width >= 1200px) {
     .icon.burger {
       display: none;
     }
