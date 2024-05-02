@@ -398,3 +398,22 @@ footer {
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   list-style: none;
 }
+
+/* Andere Tabs
+---------------------------------------------------------------------------- */
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.is-active {
+  display: block;
+}
+
+main.is-hidden {
+  display: none;
+}
+
+.tab-link.is-active {
+  background-color: var(--color-grey);
+}
