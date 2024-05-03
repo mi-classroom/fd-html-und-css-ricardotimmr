@@ -113,6 +113,7 @@
     display: inline-block;
     padding: var(--eighth) var(--half);
     margin-bottom: var(--xs);
+    margin-right: var(--xs);
     background-color: var(--color-grey);
     font-size: var(--s);
   }

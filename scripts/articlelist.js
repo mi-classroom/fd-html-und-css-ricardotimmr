@@ -20,20 +20,38 @@ function createArticleList() {
 function renderArticleList(articles) {
   articleListElement = document.querySelector('[data-js-generate-articleList]')
 
-    const cards = articles.map(function(article) {
-        return `<li>
+    // const cards = articles.map(function(article) {
+    //     return `<li>
         
-        <figure>
-            <img src="./images/${article.teaserImg}">
-            <figcaption>
-                <h3>${article.title}</h3>
-                <address>${article.author}</address>
-            </figcaption>
-        </figure>
+    //     <figure>
+    //         <img src="./images/${article.teaserImg}">
+    //         <figcaption>
+    //             <h3>${article.title}</h3>
+    //             <address>${article.author}</address>
+    //         </figcaption>
+    //     </figure>
 
+    //     </li>`;
+    // }).join('');
+
+    const cards = articles.map(function(article) {
+        const tags = article.tags.keywords.map(tag => `<li>${tag}</li>`).join('');
+        return `<li>
+          <figure>
+            <img src="./images/${article.teaserImg}" alt="${article.title}">
+            <figcaption>
+              <h3>${article.title}</h3>
+              <address>${article.author}</address>
+              <div class="tag-list-wrapper">
+                <ul class="tag-list">
+                  ${tags}
+                </ul>
+              </div>
+            </figcaption>
+          </figure>
         </li>`;
-    }).join('');
+      }).join('');
 
     articleListElement.innerHTML = cards;
-    console.log(authors);
+    
 }
