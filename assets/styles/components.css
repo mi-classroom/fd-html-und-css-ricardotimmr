@@ -399,7 +399,7 @@ footer {
   list-style: none;
 }
 
-/* Andere Tabs
+/*  Tab wechsel Content
 ---------------------------------------------------------------------------- */
 
 .tab-content {
@@ -416,4 +416,5 @@ main.is-hidden {
 
 .tab-link.is-active {
   background-color: var(--color-grey);
+  font-weight: var(--fw-bold);
 }
