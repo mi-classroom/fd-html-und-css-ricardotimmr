@@ -35,7 +35,7 @@ function filterArticles(filterValue){
 
 
 
-// Initialize the buttons as filters
+// Initialize the buttons as filters when they are not dinamically generated
 
 /* function initFilters(){
   const filterButtons = document.querySelectorAll('[data-js-category="keywords"] [data-js-filter');
